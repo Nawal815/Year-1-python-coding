@@ -1,0 +1,20 @@
+#Car Value program
+
+#------------------------
+#Subprograms
+#------------------------
+def show_value(value, resale_value):
+    year = 0
+    depreciation = 0.25
+    while value >= resale_value and resale_value >0:
+        print("In year", year, "the car is worth £", value)
+        value = int(value -(value * depreciation))
+        year = yaer + 1
+    print("Part exchangebefore the end of the year", year)
+
+#------------------------
+#Main Program
+#------------------------
+value = int(input("Enter the value of the car purchased: £"))
+resale_value = int(input("Enter the minimum part exchange value: £ "))
+show_value(value, resale_value)
